@@ -1,4 +1,4 @@
-# MentionPM
+# MentionsPM
 
 Send messages with @ !
 
