@@ -1,2 +1,18 @@
 # MentionPM
-Mention players, your team or op's!
+
+Mention your Teams or ViP`s........
+
+## Features:
+
+- [X] Mention Team!
+- [ ] Mention ViP's!
+- [X] Mention OP's
+- [ ] Mention..?
+
+### Tested and Works with
+
+- [X] Pocketmine-MP
+- [ ] Tesseract
+- [ ] Bluelight
+
+_(Should work with all of those)_

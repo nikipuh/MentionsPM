@@ -1,0 +1,17 @@
+#Welcome to MentionPM!
+#Mention your Team, VIP's or OP's!
+
+#No Permission Messages:
+no-perm-team: "Nope..."
+no-perm-op: "Nope..."
+no-perm-vip: "Nope..."
+
+#Mention Tags & Colors (Use Color Codes)
+teamtag-color: c
+team-mention-tag: "@Team"
+optag-color: b
+op-mention-tag: "@Operators"
+viptag-color: 6
+vip-mention-tag: "@ViP"
+
+#Plugin by LeNick!
