@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener{
                  $ttc = $this->getConfig()->get("teamtag-color");
                  /*$att = array_shift($messageParts);
                  $msg = implode(" ", $messageParts);*/
-                 $online->sendMessage("Â§7(Â§$ttc" . $this->getConfig()->get("team-mention-tag") . "Â§7) Â§7" . $player->getDisplayName() . "Â§$ttc Â»Â§f " . str_replace("@vip ", "", $message) . "");
+                 $online->sendMessage("Â§7(Â§$ttc" . $this->getConfig()->get("team-mention-tag") . "Â§7) Â§7" . $player->getDisplayName() . "Â§$ttc Â»Â§f " . str_replace("@t ", "", $message) . "");
                  
         }
 }else{
