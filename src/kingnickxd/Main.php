@@ -71,7 +71,6 @@ class Main extends PluginBase implements Listener{
 }
     }
 }elseif($messageParts[0] == "@lenick") {
-            foreach($this->getServer()->getOnlinePlayers() as $online){
                  $event->setCancelled(true);
                  $player->sendMessage(" ");
                  $player->sendMessage("Â§a  MentionPM by LeNick :)");//Please do not remove Credits! :)
