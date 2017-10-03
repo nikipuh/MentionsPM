@@ -27,59 +27,58 @@ class Main extends PluginBase implements Listener{
             
             foreach($this->getServer()->getOnlinePlayers() as $online){
              if($player->hasPermission("mention.team")) {
+             $event->setCancelled(true);
               if($online->hasPermission("mention.team")) {
                  $ttc = $this->getConfig()->get("teamtag-color");
-                 $att = array_shift($messageParts);
-                 $msg = implode(" ", $messageParts);
-                 $online->sendMessage("§7(§$ttc" . $this->getConfig()->get("team-mention-tag") . "§7) §7" . $player->getDisplayName() . "§$ttc »§f $msg");
-                 $event->setCancelled(true);
+                 /*$att = array_shift($messageParts);
+                 $msg = implode(" ", $messageParts);*/
+                 $online->sendMessage("Â§7(Â§$ttc" . $this->getConfig()->get("team-mention-tag") . "Â§7) Â§7" . $player->getDisplayName() . "Â§$ttc Â»Â§f " . str_replace("@vip ", "", $message) . "");
+                 
         }
 }else{
-    $player->sendMessage("§c" . $this->getConfig()->get("no-perm-team") . "");
+    $player->sendMessage("Â§c" . $this->getConfig()->get("no-perm-team") . "");
     $event->setCancelled(true);
 }
     }
         }elseif(count($messageParts) > 1 AND $messageParts[0] == "@op") {
             foreach($this->getServer()->getOnlinePlayers() as $online){
                 if($player->hasPermission("mention.op")) {
+                $event->setCancelled(true);
                  if($online->hasPermission("mention.op")) {
                  $otc = $this->getConfig()->get("optag-color");
-                 $att = array_shift($messageParts);
-                 $msg = implode(" ", $messageParts);
-                 $online->sendMessage("§7(§$otc" . $this->getConfig()->get("op-mention-tag") . "§7) §7" . $player->getDisplayName() . "§$otc »§f $msg");
-                 $event->setCancelled(true);
+                 /*$att = array_shift($messageParts);
+                 $msg = implode(" ", $messageParts);*/
+                 $online->sendMessage("Â§7(Â§$otc" . $this->getConfig()->get("op-mention-tag") . "Â§7) Â§7" . $player->getDisplayName() . "Â§$otc Â»Â§f " . str_replace("@op ", "", $message) . "");
         }
     }else{
-    $player->sendMessage("§c" . $this->getConfig()->get("no-perm-op") . "");
+    $player->sendMessage("Â§c" . $this->getConfig()->get("no-perm-op") . "");
     $event->setCancelled(true);
 }
     }
     }elseif(count($messageParts) > 1 AND $messageParts[0] == "@vip") {
             foreach($this->getServer()->getOnlinePlayers() as $online){
                 if($player->hasPermission("mention.vip")) {
+                $event->setCancelled(true);
                  if($online->hasPermission("mention.vip")) {
                  $vtc = $this->getConfig()->get("viptag-color");
-                 $att = array_shift($messageParts);
-                 $msg = implode(" ", $messageParts);
-                 $online->sendMessage("§7(§$vtc" . $this->getConfig()->get("vip-mention-tag") . "§7) §7" . $player->getDisplayName() . "§$vtc »§f $msg");
-                 $event->setCancelled(true);
+                 /*$att = array_shift($messageParts);
+                 $msg = implode(" ", $messageParts);*/
+                 $online->sendMessage("Â§7(Â§$vtc" . $this->getConfig()->get("vip-mention-tag") . "Â§7) Â§7" . $player->getDisplayName() . "Â§$vtc Â»Â§f " . str_replace("@vip ", "", $message) . "");
         }
     }else{
-    $player->sendMessage("§c" . $this->getConfig()->get("no-perm-vip") . "");
+    $player->sendMessage("Â§c" . $this->getConfig()->get("no-perm-vip") . "");
     $event->setCancelled(true);
 }
     }
 }elseif($messageParts[0] == "@lenick") {
             foreach($this->getServer()->getOnlinePlayers() as $online){
-                 $att = array_shift($messageParts);
-                 $msg = implode(" ", $messageParts);
-                 $player->sendMessage(" ");
-                 $player->sendMessage("§a  MentionPM by LeNick :)");//Please do not remove Credits! :)
-                 $player->sendMessage("§2  Website: dreambuild.de"); //Please do not remove Credits! :)
-                 $player->sendMessage("§2  YouTube: LeNick (youtube.com/c/LeNick01)"); //Please do not remove Credits! :)
-                 $player->sendMessage("§b  Discord: discord.gg/eewwVNZ");//Please do not remove Credits! :)
-                 $player->sendMessage(" ");
                  $event->setCancelled(true);
+                 $player->sendMessage(" ");
+                 $player->sendMessage("Â§a  MentionPM by LeNick :)");//Please do not remove Credits! :)
+                 $player->sendMessage("Â§2  Website: dreambuild.de"); //Please do not remove Credits! :)
+                 $player->sendMessage("Â§2  YouTube: LeNick (youtube.com/c/LeNick01)"); //Please do not remove Credits! :)
+                 $player->sendMessage("Â§b  Discord: discord.gg/eewwVNZ");//Please do not remove Credits! :)
+                 $player->sendMessage(" ");
 }
 }
     }
