@@ -1,8 +1,12 @@
+---
 name: MentionsPM
-main: kingnickxd\Main
-author: kingnickxd
 version: 1.0.2
-api: [3.0.0-ALPHA8, 3.0.0-ALPHA9]
+api:
+- 3.0.0-ALPHA8
+- 3.0.0-ALPHA9
+- 3.0.0-ALPHA10
+main: nikipuh\Main
+author: LeNick
 permissions:
   mention.team:
     default: op
@@ -10,3 +14,4 @@ permissions:
     default: op
   mention.vip:
     default: op
+...
